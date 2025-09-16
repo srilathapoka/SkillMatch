@@ -6,4 +6,5 @@ def text_extractor(file_path):
     pdf_text=''
     for pages in pdf_file.pages:
         pdf_text+=pages.extract_text()
+
     return pdf_text    
